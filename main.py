@@ -1,3 +1,4 @@
+import pyautogui
 from pyautogui import press, typewrite, hotkey
 
 list = open("list.txt","r")
@@ -6,11 +7,11 @@ data_into_list = data.replace('\n', ' ').split(".")
 
 print(data_into_list)
 
-count = data_into_list.count()
+count = len(data_into_list)
 
 for item in data_into_list:
     I = 0
-    typewrite(I in data_into_list)
+    typewrite(I in data_into_list)  
     I = I + 1
     if I == 10:
         break
@@ -18,4 +19,4 @@ for item in data_into_list:
 
 list.close()
     # Add an indented block here
-
+    #throws error without indent so i indent
