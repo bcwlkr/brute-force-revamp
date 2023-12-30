@@ -15,8 +15,8 @@ for item in data_into_list:
     keyboard.type(item) 
     keyboard.press(keyboard.enter) 
     I = I + 1
-    if I == 10:
-        break
+    #if I == 10:   for testing purposes
+       # break     for testing purposes
 
 
 list.close()
